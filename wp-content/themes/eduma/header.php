@@ -14,6 +14,22 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php esc_url( bloginfo( 'pingback_url' ) ); ?>">
 	<?php wp_head(); ?>
+	<style> 
+
+
+	
+	video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+}</style>
 </head>
 <body <?php body_class(); ?> id="thim-body">
 <?php if ( function_exists( 'wp_body_open' ) ) {
@@ -50,6 +66,8 @@
 				get_template_part( 'inc/header/' . get_theme_mod( 'thim_header_style', 'header_v1' ) );
 			}
 			?>
+			<video autoplay muted loop src="http://localhost/eduma/wp-content/uploads/2021/07/LTE-1.mp4">
+            </video>
         </header>
 
         <div id="main-content">
