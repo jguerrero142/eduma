@@ -20,6 +20,7 @@
 	
 	video {
   position: absolute;
+  opacity: 20%;
   top: 0;
   left: 0;
   width: 100%;
